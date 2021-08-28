@@ -1,0 +1,41 @@
+#mainBGdiv {
+
+	img {
+		max-height: 100vh;
+	}
+
+	#logoDiv {
+		background-color: rgba(78, 78, 78, 0.596);
+		position: absolute;
+	}
+
+	#scrollButton {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		color: rgba(199, 199, 199, 0.658);
+		z-index: 3;
+		i {
+			font-size: 3rem;
+		}
+	}
+}
+
+nav {
+	.redIcon {
+		color: #ff5c5c;
+	}
+
+	.blueIcon {
+		color: #171161;
+
+	}
+	
+	.yellowIcon {
+		color: #ff914d;
+	}
+
+	.nav-link:hover {
+		border-bottom: 1px black solid !important;
+	}
+}
