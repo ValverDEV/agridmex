@@ -34,4 +34,24 @@ nav .yellowIcon {
 nav .nav-link:hover {
   border-bottom: 1px black solid !important;
 }
+
+#quienesSomos p {
+  text-align: justify;
+  font-size: large;
+  margin-top: 1rem;
+}
+
+#quienesSomos .ratio img {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+#quienesSomos #logo {
+  max-width: 400px;
+  margin: 1rem 0;
+}
+
+#servicios h2 {
+  margin: 7rem 0 !important;
+}
 /*# sourceMappingURL=styles.css.map */
