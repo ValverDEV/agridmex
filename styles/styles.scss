@@ -64,9 +64,33 @@ nav {
 
 #servicios {
 
-	// padding-top: 1rem;
+	// background-color: rgb(252, 187, 90);
+	background-color: rgb(255, 109, 65);
 
-	h2 {
-		margin: 7rem 0 !important;
+	#textLogistica {
+		font-size: 1.25rem;
+	}
+
+	#textComercial {
+		font-size: 1.25rem;
+	}
+}
+
+#productos {
+	background-color: rgb(247, 156, 53);
+
+	.lista {
+		font-size: 1.5rem;
+
+		// div {
+		// 	margin: 0.7rem 0;
+		// }
+	}
+	.listaEsp {
+		font-size: 1.3rem;
+
+		// div {
+		// 	margin: 0.7rem 0;
+		// }
 	}
 }

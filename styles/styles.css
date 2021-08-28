@@ -51,7 +51,27 @@ nav .nav-link:hover {
   margin: 1rem 0;
 }
 
-#servicios h2 {
-  margin: 7rem 0 !important;
+#servicios {
+  background-color: #ff6d41;
+}
+
+#servicios #textLogistica {
+  font-size: 1.25rem;
+}
+
+#servicios #textComercial {
+  font-size: 1.25rem;
+}
+
+#productos {
+  background-color: #f79c35;
+}
+
+#productos .lista {
+  font-size: 1.5rem;
+}
+
+#productos .listaEsp {
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
