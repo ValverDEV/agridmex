@@ -17,7 +17,7 @@ body {
 
 	#scrollButton {
 		position: absolute;
-		bottom: 5%;
+		bottom: 6%;
 		left: 50%;
 		color: rgba(199, 199, 199, 0.658);
 		z-index: 3;
@@ -145,5 +145,35 @@ nav {
 
 	p {
 		font-size: 1.3rem;
+	}
+}
+
+// lg
+@media (max-width: 1200px) {
+	#servicios {
+		#calidadHead {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+// md 
+@media (max-width: 768px) {
+	#productos {
+
+		.lista {
+			margin: 0 0;
+			padding: 0 0;
+		}
+
+		.text-center {
+			margin-bottom:  1.2rem;
+		}
+	
+		.lista:nth-of-type(1){
+			.text-center:nth-of-type(1) {
+				margin-top: 1.2rem;
+			}
+		}
 	}
 }

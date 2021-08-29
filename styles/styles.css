@@ -14,7 +14,7 @@ body {
 
 #mainBGdiv #scrollButton {
   position: absolute;
-  bottom: 5%;
+  bottom: 6%;
   left: 50%;
   color: rgba(199, 199, 199, 0.658);
   z-index: 3;
@@ -124,5 +124,24 @@ nav .nav-link:hover {
 
 #contacto p {
   font-size: 1.3rem;
+}
+
+@media (max-width: 1200px) {
+  #servicios #calidadHead {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #productos .lista {
+    margin: 0 0;
+    padding: 0 0;
+  }
+  #productos .text-center {
+    margin-bottom: 1.2rem;
+  }
+  #productos .lista:nth-of-type(1) .text-center:nth-of-type(1) {
+    margin-top: 1.2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

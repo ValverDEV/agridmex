@@ -12,12 +12,12 @@
 </head>
 
 <body>
-	<div id="mainBGdiv" class="w-100 d-flex justify-content-start">
+	<div id="mainBGdiv" class="w-100 d-flex justify-content-start d-none d-xl-flex">
 		<img src="media/bg-main.jpg" alt="" class="w-100 h-100">
 		<div id="logoDiv" class="py-5 ms-5 px-2 align-self-center">
 			<img src="media/logo-light.png" alt="" class="my-3">
 		</div>
-		<a href="#quienesSomos" id="scrollButton">
+		<a href="#quienesSomos" id="scrollButton" class="d-none d-xl-inline">
 			<i class="bi bi-arrow-down-circle p-0 align-self-end"></i>
 		</a>
 
@@ -43,10 +43,10 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
-					<a href="#quienesSomos" class="nav-link">Quiénes Somos</a>
-					<a href="#servicios" class="nav-link">Servicios</a>
-					<a href="#productos" class="nav-link">Productos</a>
-					<a href="#contacto" class="nav-link">Contacto</a>
+					<a href="#quienesSomos" class="nav-link text-center">Quiénes Somos</a>
+					<a href="#servicios" class="nav-link text-center">Servicios</a>
+					<a href="#productos" class="nav-link text-center">Productos</a>
+					<a href="#contacto" class="nav-link text-center">Contacto</a>
 				</div>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 	<section id="quienesSomos">
 		<div class="container">
 			<div class="row">
-				<div class="col-8">
+				<div class="col col-lg-8">
 					<div class="row">
 						<img src="media/logo-dark.png" alt="" id="logo">
 					</div>
@@ -85,7 +85,8 @@
 						</p>
 					</div>
 				</div>
-				<div class="col d-flex flex-column justify-content-between pt-5" id="imagenes">
+				<div class="d-none d-lg-flex col flex-column justify-content-between pt-5"
+					id="imagenes">
 					<div class="ratio ratio-16x9 mt-5">
 						<div>
 							<img src="media/ship.jpg" alt="">
@@ -112,7 +113,7 @@
 				<h2 class="text-light text-center my-5 display-3">Servicios</h2>
 			</div>
 			<div class="row seaBG">
-				<div class="col-3 mb-5">
+				<div class="col-sm-6 col-lg-3 mb-5">
 					<div
 						class="bg-light servicio d-inline-block text-center p-2 h-100 d-flex flex-column justify-content-center border rounded">
 						<i class="h2 bi bi-box-seam d-block"></i>
@@ -122,7 +123,7 @@
 							primas.</p>
 					</div>
 				</div>
-				<div class="col-3 mb-5">
+				<div class="col-sm-6 col-lg-3 mb-5">
 					<div
 						class="bg-light servicio d-inline-block text-center p-2 h-100 d-flex flex-column justify-content-center border rounded">
 						<i class="h2 bi bi-bag-dash d-block"></i>
@@ -132,7 +133,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-3 mb-5">
+				<div class="col-sm-6 col-lg-3 mb-5">
 					<div
 						class="bg-light servicio d-inline-block text-center p-2 h-100 d-flex flex-column justify-content-center border rounded">
 						<i class="h2 bi bi-people d-block"></i>
@@ -142,11 +143,11 @@
 							problemas que le puedan suscitar.</p>
 					</div>
 				</div>
-				<div class="col-3 mb-5">
+				<div class="col-sm-6 col-lg-3 mb-5">
 					<div
 						class="bg-light servicio d-inline-block text-center p-2 h-100 d-flex flex-column justify-content-center border rounded">
 						<i class="h2 bi bi-patch-check d-block"></i>
-						<h3><b>Aseguramiento de Calidad</b></h3>
+						<h3 id="calidadHead"><b>Aseguramiento de Calidad</b></h3>
 						<p id="textCalidad">Sus materias primas cumplen con normas
 							internacionales tanto de
 							microbiología como de calidad e inocuidad alimentaria.</p>
@@ -165,49 +166,30 @@
 			</div>
 
 			<div class="row justify-content-center background">
-				<div class="col-4 px-3 lista my-auto">
+				<div class="col-md-6 col-lg-4 px-3 lista my-auto">
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
 						<span>Almidón de Maíz</span>
 					</div>
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Almidón de Tapioca</span>
+						<span>Almidón de Papa</span>
 					</div>
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Almidón de Papa</span>
+						<span>Almidón de Tapioca</span>
 					</div>
 				</div>
 
-				<div class="col-4 p-0">
+				<div class="d-none d-md-inline col-md-6 col-lg-4 p-0">
 					<img src="media/products1.jpg" alt="" class="w-100">
 				</div>
 
-				<div class="col-4 px-3 listaEsp my-auto">
-
-					<div class="text-center">
-						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Leche Entera en Polvo</span>
-					</div>
-					<div class="text-center">
-						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Permeato de Leche</span>
-					</div>
-					<div class="text-center">
-						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Leche Descremada en Polvo</span>
-					</div>
-				</div>
-
-			</div>
-			<div class="row justify-content-center background">
-
-				<div class="col-4 p-0">
+				<div class="d-none  d-md-inline d-lg-none  col-md-6 col-lg-4 p-0">
 					<img src="media/products2.jpg" alt="" class="w-100">
 				</div>
 
-				<div class="col-4 px-3 lista my-auto">
+				<div class="col-md-6 col-lg-4 px-3 listaEsp my-auto">
 
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
@@ -215,16 +197,52 @@
 					</div>
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
-						<span>Suero de Leche</span>
+						<span>Leche Descremada en Polvo</span>
 					</div>
+					<div class="text-center">
+						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
+						<span>Leche Entera en Polvo</span>
+					</div>
+				</div>
+
+
+				<div class="d-none  d-lg-inline col-md-6 col-lg-4 p-0">
+					<img src="media/products2.jpg" alt="" class="w-100">
+				</div>
+
+				<div class="col-md-6 col-lg-4 px-3 lista my-auto">
+
 					<div class="text-center">
 						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
 						<span>Maltodextrinas</span>
 					</div>
+					<div class="text-center">
+						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
+						<span>Permeato de Leche</span>
+					</div>
+					<div class="text-center">
+						<span class="float-start"><i class="bi bi-arrow-right"></i></span>
+						<span>Suero de Leche</span>
+					</div>
 				</div>
 
-				<div class="col-4 p-0">
+				<div class="d-none d-md-inline col-md-6 col-lg-4 p-0">
 					<img src="media/products3.jpg" alt="" class="w-100">
+				</div>
+			</div>
+			<div class="row d-md-none">
+				<div id="carouselSlides" class="carousel slide px-0 mt-3" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="media/products1.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="media/products2.jpg" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="media/products3.jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -234,7 +252,7 @@
 	<section id="contacto" class="text-light">
 		<div class="container">
 			<div class="row text-center">
-				<div class="col">
+				<div class="col-12 col-md-6 my-4 my-md-0">
 					<h2 class="display-6">Contacto</h2>
 
 					<p class="text-center my-3"><i class="bi bi-envelope-fill mx-2"></i>
@@ -244,9 +262,9 @@
 						4421256057
 					</p>
 				</div>
-				<div class="col">
+				<div class="col-12 col-md-6 my-4 my-md-0">
 					<h2 class="display-6">Dominio Fiscal</h2>
-					<div class="row">
+					<div class="row px-5 px-md-3">
 						<p class="text-center my-3">Sendero del Mirador No. 36,
 							Col.
 							Milenio
