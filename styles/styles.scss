@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 #mainBGdiv {
 
 	img {
@@ -22,6 +28,7 @@
 }
 
 nav {
+
 	.redIcon {
 		color: #ff5c5c;
 	}
@@ -35,6 +42,10 @@ nav {
 		color: #ff914d;
 	}
 
+	.nav-link {
+		color: black !important;
+	}
+
 	.nav-link:hover {
 		border-bottom: 1px black solid !important;
 	}
@@ -44,10 +55,9 @@ nav {
 
 	background-color: white;
 
-
 	p {
 		text-align: justify;
-		font-size: large;
+		font-size: 1.3rem;
 		margin-top: 1rem;
 	}
 
@@ -69,26 +79,19 @@ nav {
 	background-color: rgb(255, 109, 65);
 
 	#textLogistica {
-		font-size: 1.25rem;
+		font-size: 1.72rem;
 	}
 
 	#textComercial {
 		font-size: 1.25rem;
 	}
-}
 
-#servicios2 {
-
-	background-color: rgb(65, 65, 65);
-
-	#textLogistica {
-		font-size: 1.25rem;
-	}
-
-	#textComercial {
-		font-size: 1.25rem;
+	#textTecnica {
+		font-size: 1.2rem;
 	}
 }
+
+
 
 #productos {
 	background-image: url('/media/fondoProductos.jpg');
@@ -122,6 +125,10 @@ nav {
 
 #contacto {
 
+	.container {
+		padding: 5rem 0;
+	}
+
 	background-color: rgb(65, 65, 65);
 
 	ul {
@@ -134,5 +141,9 @@ nav {
 
 	img {
 		max-width: 300px;
+	}
+
+	p {
+		font-size: 1.3rem;
 	}
 }
