@@ -77,7 +77,8 @@ nav {
 }
 
 #productos {
-	background-color: rgb(247, 156, 53);
+	background-image: url('/media/fondoProductos.jpg');
+	background-size: cover;
 
 	.lista {
 		font-size: 1.5rem;
@@ -87,10 +88,20 @@ nav {
 		// }
 	}
 	.listaEsp {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 
 		// div {
 		// 	margin: 0.7rem 0;
 		// }
+	}
+
+	.background {
+		background-color: rgba(78, 78, 78, 0.863);
+	}	
+
+	h2 {
+		span {
+			background-color: rgba(78, 78, 78, 0.904);
+		}
 	}
 }

@@ -64,7 +64,8 @@ nav .nav-link:hover {
 }
 
 #productos {
-  background-color: #f79c35;
+  background-image: url("/media/fondoProductos.jpg");
+  background-size: cover;
 }
 
 #productos .lista {
@@ -72,6 +73,14 @@ nav .nav-link:hover {
 }
 
 #productos .listaEsp {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+
+#productos .background {
+  background-color: rgba(78, 78, 78, 0.863);
+}
+
+#productos h2 span {
+  background-color: rgba(78, 78, 78, 0.904);
 }
 /*# sourceMappingURL=styles.css.map */
