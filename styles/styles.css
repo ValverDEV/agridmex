@@ -81,7 +81,7 @@ nav .nav-link:hover {
 }
 
 #productos {
-  background-image: url("/media/fondoProductos.jpg");
+  background-image: url("../media/fondoProductos.jpg");
   background-size: cover;
 }
 
