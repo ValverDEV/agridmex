@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	height: 100%;
 }
 
 #mainBGdiv {
@@ -53,7 +54,10 @@ nav {
 
 #quienesSomos {
 
+	height: 100vh;
 	background-color: white;
+	display: flex;
+	align-items: center;
 
 	p {
 		text-align: justify;
@@ -76,7 +80,16 @@ nav {
 
 #servicios {
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 100vh;
 	background-color: rgb(255, 109, 65);
+	
+	h2 {
+		align-self: flex-start;
+	}
 
 	#textLogistica {
 		font-size: 1.72rem;
@@ -94,6 +107,7 @@ nav {
 
 
 #productos {
+	
 	background-image: url('../media/fondoProductos.jpg');
 	background-size: cover;
 
@@ -175,5 +189,11 @@ nav {
 				margin-top: 1.2rem;
 			}
 		}
+	}
+}
+
+@media (max-width: 576px){
+	#servicios {
+		height: 100%;
 	}
 }
