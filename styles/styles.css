@@ -93,7 +93,7 @@ nav .nav-link:hover {
 }
 
 #servicios #textLogistica {
-  font-size: 1.72rem;
+  font-size: 1.5rem;
 }
 
 #servicios #textComercial {
@@ -105,8 +105,9 @@ nav .nav-link:hover {
 }
 
 #productos {
-  background-image: url("../media/fondoProductos.jpg");
+  background-image: url("../media/productosAlt.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 #productos .lista {
@@ -118,11 +119,7 @@ nav .nav-link:hover {
 }
 
 #productos .background {
-  background-color: rgba(78, 78, 78, 0.863);
-}
-
-#productos h2 span {
-  background-color: rgba(78, 78, 78, 0.904);
+  background-color: rgba(255, 255, 255, 0.747);
 }
 
 #contacto {
