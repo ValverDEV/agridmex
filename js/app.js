@@ -1,14 +1,24 @@
 function removeBG() {
+	var cover = document.querySelector('#cover')
+	cover.style.opacity = 0
+	setTimeout(function () {
+		cover.style.display = 'none'
+		console.log('here')
+	}, 1000)
+}
+
+function bgCounter(current) {
+	if (current === 0) {
+		removeBG()
+		return
+	}
 	var state = document.readyState
 	if (state == 'complete') {
-		var cover = document.querySelector('#cover')
-		setTimeout(function () {
-			cover.style.opacity = 0
-		}, 1000)
-		cover.style.visibity = 'hidden'
+		removeBG()
+		return
 	} else {
-		setTimeout(removeBG, 1000)
+		setTimeout(bgCounter(current - 1), 1000)
 	}
 }
 
-removeBG()
+bgCounter(5)
