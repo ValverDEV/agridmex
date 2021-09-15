@@ -5,6 +5,10 @@ body {
 	height: 100%;
 }
 
+#cover {
+	display: flex;
+}
+
 #mainBGdiv {
 
 	img {
@@ -92,7 +96,7 @@ nav {
 	}
 
 	#textLogistica {
-		font-size: 1.72rem;
+		font-size: 1.5rem;
 	}
 
 	#textComercial {
@@ -104,37 +108,33 @@ nav {
 	}
 }
 
-
+$bg-color-productos: rgba(255, 255, 255, 0.747);
 
 #productos {
 	
-	background-image: url('../media/fondoProductos.jpg');
+	background-image: url('../media/productosAlt.jpg');
 	background-size: cover;
+	background-position: center center;
 
 	.lista {
 		font-size: 1.5rem;
-
-		// div {
-		// 	margin: 0.7rem 0;
-		// }
 	}
 	.listaEsp {
 		font-size: 1.4rem;
-
-		// div {
-		// 	margin: 0.7rem 0;
-		// }
 	}
 
+	// .background {
+	// 	background-color: rgba(78, 78, 78, 0.863);
+	// }	
 	.background {
-		background-color: rgba(78, 78, 78, 0.863);
+		background-color: $bg-color-productos;
 	}	
 
-	h2 {
-		span {
-			background-color: rgba(78, 78, 78, 0.904);
-		}
-	}
+	// h2 {
+	// 	span {
+	// 		background-color: $bg-color-productos;
+	// 	}
+	// }
 }
 
 #contacto {
@@ -173,6 +173,10 @@ nav {
 
 // md 
 @media (max-width: 768px) {
+	// #servicios {
+
+	// }
+
 	#productos {
 
 		.lista {
@@ -196,4 +200,14 @@ nav {
 	#servicios {
 		height: 100%;
 	}
+}
+
+#cover {
+	opacity: 1;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100000;
+
+	transition: opacity 1s;
 }

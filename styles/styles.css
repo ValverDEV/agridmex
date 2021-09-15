@@ -4,6 +4,12 @@ body {
   height: 100%;
 }
 
+#cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #mainBGdiv img {
   max-height: 100vh;
 }
@@ -93,7 +99,7 @@ nav .nav-link:hover {
 }
 
 #servicios #textLogistica {
-  font-size: 1.72rem;
+  font-size: 1.5rem;
 }
 
 #servicios #textComercial {
@@ -105,8 +111,9 @@ nav .nav-link:hover {
 }
 
 #productos {
-  background-image: url("../media/fondoProductos.jpg");
+  background-image: url("../media/productosAlt.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
 #productos .lista {
@@ -118,11 +125,7 @@ nav .nav-link:hover {
 }
 
 #productos .background {
-  background-color: rgba(78, 78, 78, 0.863);
-}
-
-#productos h2 span {
-  background-color: rgba(78, 78, 78, 0.904);
+  background-color: rgba(255, 255, 255, 0.747);
 }
 
 #contacto {
@@ -173,5 +176,15 @@ nav .nav-link:hover {
   #servicios {
     height: 100%;
   }
+}
+
+#cover {
+  opacity: 1;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 /*# sourceMappingURL=styles.css.map */
