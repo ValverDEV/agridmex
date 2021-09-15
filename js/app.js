@@ -12,7 +12,7 @@ function bgCounter(current) {
 		removeBG()
 		return
 	}
-	var state = document.readyState
+	var state = window.loaded
 	if (state == 'complete') {
 		removeBG()
 		return
